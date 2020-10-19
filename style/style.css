@@ -1,6 +1,11 @@
 body{
     display: flex;
     justify-content: center;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 214, 107, 0.849),
+        rgb(206, 214, 213)
+    );
 }
 .Campo_formulario{
     background-image: linear-gradient(
