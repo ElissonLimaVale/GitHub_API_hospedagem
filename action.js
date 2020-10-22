@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $("#notific").hide();
     var url_string = window.location.href;
     var url = new URL(url_string);
     var retorno = url.searchParams.get("retorno");
@@ -38,8 +39,22 @@ $(document).ready(function(){
     }
     $("#cadastrar").click(function(){
         if(enviar()){
-            form = document.querySelector("form");
-            form.submit();
+            $("#notific").show();
+            $.ajax(
+                method = "POST",
+                url = "https://a959dbf49800.ngrok.io/git/raception.js",
+                data = {
+                    nome: $("#nome"),
+                    email: $("#email"),
+                    senha: $("#senha")
+                }
+            ).done(function(){
+                $("#notific").hide();
+                alert("Cadastrado com sucesso!");
+            }).fail(function(){
+                $("#notific").hide();
+                alert("Ops, ocorreu um erro inesperado, atualiza a pagina e tente novamente!");
+            });
         }
     });
 });
