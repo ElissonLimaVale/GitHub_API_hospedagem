@@ -42,7 +42,7 @@ $(document).ready(function(){
             $("#notific").show();
             $.ajax(
                 method = "POST",
-                url = "https://a959dbf49800.ngrok.io/git/raception.js",
+                url = "http://a959dbf49800.ngrok.io/git/index.php",
                 data = {
                     nome: $("#nome"),
                     email: $("#email"),
