@@ -3,7 +3,7 @@ body{
     justify-content: center;
     background-image: linear-gradient(
         to bottom,
-        rgba(0, 214, 107, 0.849),
+        rgba(0, 214, 107, 0.550),
         rgb(206, 214, 213)
     );
 }
@@ -44,6 +44,7 @@ form{
 .btn:hover{
     background-color: rgba(254, 149, 3, 0.966);
 }
+
 /*################### lOAD DE NOTIFICAÇÃO #################*/
 
 #notific {
@@ -77,3 +78,4 @@ form{
         transform: rotate(360deg);
     }
 }
+
